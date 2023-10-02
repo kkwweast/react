@@ -1,0 +1,67 @@
+import {useState  } from "React" () {
+    return }
+export default Function Example () {
+    const [numbers, setNumbers] => {
+        const [color, setColor] = useState([1, 2, 5, 7,])
+        const [ListColor, setlistColor] = useState("#000") ;
+    }
+      function handChange(ev) {
+        console.log(ev);
+        setlistColor(ev.target.value);
+
+      }
+      function handleSubmit(ev) {
+        ev.preventDefault();
+        setListColor(ev.target,value);
+      }
+      return {
+        <div> 
+   <form onSubmit={handleSubmit>}>
+        <label htmlFor="ColorInput">
+        <imput type="color"name="coloredName">
+        <Button> Apply Shades</Button> 
+        </form>
+      }
+        {numbers.map((number, index)) => {
+            return <li style= {{
+                color: listColor
+            }} keys={index}>{number}</li>
+    
+        </ul>   
+                        
+
+      }
+    }
+}
+
+        <div>
+
+            <form> 
+            <h2> Prime setNumbers</h2>
+            <ul>
+            {numbers.map((number, index)) => {
+                return <li style= {{
+                    color: listColor
+                }} keys={index}>{number}</li>
+            })}
+            </ul>  
+              <Label>
+                </Label >
+                <imput type="color"name="colorInput"id="colorInput"/>
+                <Button>Apply colorInput</Button>
+
+
+            </form>
+           <h2> </h2>
+        </div>
+    )
+} 
+
+
+
+
+
+
+
+
+
